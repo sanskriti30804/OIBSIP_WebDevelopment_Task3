@@ -50,4 +50,6 @@ A working To-Do web application where users can:
 - Edit or delete any task
 - See date and time when tasks were added/completed
 - Enjoy a responsive and user-friendly interface
-  
+
+## Screenshot
+![Screenshot](todowebapp.png)
