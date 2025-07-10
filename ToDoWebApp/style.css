@@ -1,0 +1,161 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: #b178d6;
+  color: #333;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  overflow-y: auto;
+}
+
+.container {
+  background: #fff;
+  backdrop-filter: blur(20px);
+  padding: 30px;
+  border-radius: 20px;
+  width: 90%;
+  max-width: 400px;
+  box-shadow: 0 0 30px rgba(162, 103, 138, 0.2);
+  text-align: center;
+  margin: 20px;
+}
+
+h1 {
+  margin-bottom: 10px;
+  color: #3a214a;
+}
+
+.progress-section {
+  margin-bottom: 20px;
+}
+
+.progress-bar {
+  background: #b178d6;
+  border-radius: 30px;
+  height: 10px;
+  margin: 10px 0;
+  overflow: hidden;
+}
+
+.progress {
+  height: 100%;
+  background: #3a214a;
+  width: 0%;
+  transition: width 0.3s ease;
+}
+
+#stats {
+  font-size: 14px;
+  color: #3a214a;
+}
+
+.input-section {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+input[type="text"] {
+  flex: 1;
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #3a214a;
+  font-size: 14px;
+  background-color: #fff;
+  color: #333;
+}
+
+button {
+  background: #3a214a;
+  border: none;
+  border-radius: 50%;
+  color: white;
+  font-size: 20px;
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+button:hover {
+  background: #84546c;
+}
+
+.task-section {
+  text-align: left;
+  margin-top: 20px;
+}
+
+.task-section h2 {
+  font-size: 18px;
+  margin-bottom: 10px;
+  color: #3a214a;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.task-list {
+  list-style: none;
+  padding: 0;
+}
+
+.task-list li {
+  background: #fff0f3;
+  border-radius: 12px;
+  padding: 10px;
+  margin: 10px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.task-info {
+  text-align: left;
+  flex: 1;
+  color: #444;
+}
+
+.task-info small {
+  display: block;
+  font-size: 11px;
+  color: #888;
+}
+
+.task-actions {
+  display: flex;
+  gap: 6px;
+}
+
+.task-actions button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.task-actions button ion-icon {
+  font-size: 18px;
+  vertical-align: middle;
+}
+
+.task-actions .complete ion-icon {
+   
+  color: #3a214a;
+}
+
+.task-actions .edit ion-icon {
+  color: #3a214a;
+}
+
+.task-actions .delete ion-icon {
+  color: #3a214a;
+}
+
+.completed li {
+  text-decoration: line-through;
+  opacity: 0.6;
+  color: #999;
+}
